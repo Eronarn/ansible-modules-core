@@ -8,6 +8,8 @@ git submodule update --init
 rm -rf "lib/ansible/modules/$MOD_REPO"
 ln -s ../ "lib/ansible/modules/$MOD_REPO"
 
+pip install -U Jinja2 PyYAML setuptools six pycrypto
+
 . ./hacking/env-setup
 bin/ansible-doc -l
 make -C docsite

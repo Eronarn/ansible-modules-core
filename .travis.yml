@@ -9,12 +9,6 @@ addons:
     packages:
       - python2.4
       - python2.6
-      - python-jinja2
-      - python-yaml
-      - python-pkg-resources
-      - python-setuptools
-      - python-six
-      - python-pycrypto
 script:
   - python2.4 -m compileall -fq -x 'cloud/' .
   - python2.4 -m compileall -fq cloud/amazon/_ec2_ami_search.py cloud/amazon/ec2_facts.py
